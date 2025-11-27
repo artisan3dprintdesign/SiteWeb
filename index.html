@@ -2,94 +2,115 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Titouan Franchet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/artisan3dprintdesign/SiteImage/refs/heads/main/logo.png">
-
-    <link rel="stylesheet" href="stylee.css">
-  <title>Artisan3DPrint Design</title>
+  <meta charset="UTF-8">
+  <meta name="author" content="Titouan Franchet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png"
+        href="https://raw.githubusercontent.com/artisan3dprintdesign/SiteImage/refs/heads/main/logo.png">
+  <!-- CSS spécifique à l’index -->
+  <link rel="stylesheet" href="index.css">
+  <title>Artisan3DPrint Design - Accueil</title>
 </head>
 
 <body>
-  <header>
+
+  <!-- HEADER -->
+  <header class="site-header">
     <h1>Artisan3DPrint Design</h1>
-    <p>Bienvenue dans mon univers créatif 🌟</p>
+    <p>Création 3D • Design • Impression 3D moderne</p>
   </header>
 
-  <nav>
-    <a href="index.html" onclick="showSection('accueil')">Accueil</a>
-    <a href="galerie.html" onclick="showSection('galerie')">Projets</a>
-    <a href="contact.html" onclick="showSection('contact')">Contact</a>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html">Accueil</a>
+    <a href="galerie.html">Projets</a>
+    <a href="contact.html">Contact</a>
   </nav>
-<body1>
-  <main>
-    <!-- ACCUEIL -->
-    <section id="" class="active">
-      <h2>À propos de moi</h2>
 
-  <div class="intro">
-    <div class="texte">
-      <p>Salut 👋 Je suis un créateur passionné par le design, la photo et la création de contenus modernes...</p>
-      <p>Artisan3DPrint Design associe savoir-faire artisanal et technologies modernes d’impression 3D...</p>
-    </div>
+  <main class="page">
 
-    <img src="https://raw.githubusercontent.com/artisan3dprintdesign/SiteImage/refs/heads/main/Logo_Artisan3DPrintDesign.png"
-         alt="Logo Artisan 3D Print Design"
-         class="logo">
-  </div>
+    <!-- À PROPOS DE MOI -->
+    <section class="card section-about">
+      <div class="about-content">
+        <div class="about-text">
+          <h2>À propos de moi</h2>
+          <p>
+            Salut 👋 Je suis un créateur passionné par le design, la 3D et la création de contenus modernes.
+            Artisan3DPrint Design associe créativité et technologie pour donner vie à des projets uniques,
+            sur mesure et pensés pour chaque client.
+          </p>
+          <p>
+            J’aime particulièrement transformer une simple idée (un logo, une forme, un objet du quotidien)
+            en pièce réelle imprimée en 3D, prête à être utilisée, offerte ou exposée.
+          </p>
+        </div>
 
- <!-- BLOC IMPRIMANTE -->
-<div class="imprimante-container">
-
-    <img src="https://raw.githubusercontent.com/artisan3dprintdesign/SiteImage/refs/heads/main/imprimante.png" 
-         alt="Imprimante 3D Ender 3 S1 Pro"
-         class="imprimante-photo">
-
-    <div class="imprimante-texte">
-        <h3>Mon imprimante 3D</h3>
-        <p>
-            J’utilise une <strong>Creality Ender 3 S1 Pro</strong>, une imprimante fiable et précise,
-            idéale pour créer des projets 3D de haute qualité.
-        </p>
-
-        <a href="imprimante.html" class="btn-info">En savoir plus</a>
-    </div>
-
-</div>
-         <div class="gallery">
-
-        <!-- PHOTO A CHANGER-->
-        <a href="projet1.html" class="bouton-image">
-          <img src="https://raw.githubusercontent.com/artisan3dprintdesign/SiteImage/refs/heads/main/symboleS.jpg" alt="Lampe design imprimée en 3D" class="logo">
-        </a>        
-
-        <a href="projet2.html" class="bouton-image">
-          <img src="https://raw.githubusercontent.com/artisan3dprintdesign/SiteImage/refs/heads/main/projetplaque.jpg" alt="Photo 2">
-        </a>
-
-        <a href="projet3.html" class="bouton-image">
-          <img src="https://raw.githubusercontent.com/artisan3dprintdesign/SiteImage/refs/heads/main/photo3.png" alt="Photo 3">
-        </a> 
-
-
+        <div class="about-logo">
+          <img
+            src="https://raw.githubusercontent.com/artisan3dprintdesign/SiteImage/refs/heads/main/Logo_Artisan3DPrintDesign.png"
+            alt="Logo Artisan3DPrint Design">
+        </div>
       </div>
     </section>
-  </main>
-</body1>
 
-  <footer>
-     © 2025 Artisan3DPrint Design — Tous droits réservés
+    <!-- MON IMPRIMANTE 3D -->
+    <section class="card section-printer">
+      <h2>Mon imprimante 3D</h2>
+
+      <div class="printer-content">
+        <div class="printer-image">
+          <img
+            src="https://raw.githubusercontent.com/artisan3dprintdesign/SiteImage/refs/heads/main/imprimante.png"
+            alt="Imprimante 3D Creality Ender 3 S1 Pro">
+        </div>
+
+        <div class="printer-text">
+          <p>
+            J’utilise une <strong>Creality Ender 3 S1 Pro</strong>, une imprimante fiable et précise,
+            idéale pour créer des projets 3D de haute qualité.
+          </p>
+          <p>
+            Grâce à son extrudeur direct, son auto-nivellement et son plateau chauffant,
+            je peux imprimer des pièces propres, détaillées et robustes.
+          </p>
+          <a class="btn-primary" href="imprimante.html">En savoir plus</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUELQUES CRÉATIONS -->
+    <section class="card section-creations">
+      <h2>Quelques créations</h2>
+      <p class="creations-intro">
+        Un aperçu de certains projets réalisés récemment :
+      </p>
+
+      <div class="creations-grid">
+        <a href="projet1.html" class="creation-card">
+          <img
+            src="https://raw.githubusercontent.com/artisan3dprintdesign/SiteImage/refs/heads/main/symboleS.jpg"
+            alt="Porte-clés Suzuki 3D">
+        </a>
+
+        <a href="projet2.html" class="creation-card">
+          <img
+            src="https://raw.githubusercontent.com/artisan3dprintdesign/SiteImage/refs/heads/main/projetplaque.jpg"
+            alt="Plaque moto personnalisée">
+        </a>
+
+        <a href="projet3.html" class="creation-card">
+          <img
+            src="https://raw.githubusercontent.com/artisan3dprintdesign/SiteImage/refs/heads/main/photo3.png"
+            alt="Création 3D n°3">
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    © 2025 Artisan3DPrint Design — Tous droits réservés
   </footer>
 
-  <script>
-    // Script pour afficher les sections selon l’onglet cliqué
-    function showSection(id) {
-      document.querySelectorAll("section").forEach(s => s.classList.remove("active"));
-      document.getElementById(id).classList.add("active");
-    }
-  </script>
 </body>
 </html>
-
-
