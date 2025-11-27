@@ -2,74 +2,73 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Titouan Franchet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/artisan3dprintdesign/SiteImage/refs/heads/main/logo.png">
-    <link rel="stylesheet" href="stylee.css">
+  <meta charset="UTF-8">
+  <meta name="author" content="Titouan Franchet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png"
+        href="https://raw.githubusercontent.com/artisan3dprintdesign/SiteImage/refs/heads/main/logo.png">
+  <!-- CSS spécifique à la galerie -->
+  <link rel="stylesheet" href="galerie.css">
   <title>Artisan3DPrint Design - Galerie</title>
 </head>
 
 <body>
-  <header>
+
+  <!-- HEADER -->
+  <header class="site-header">
     <h1>Artisan3DPrint Design</h1>
     <p>Bienvenue dans ma Galerie 🌟</p>
   </header>
 
-  <nav>
-    <a href="index.html" onclick="showSection('accueil')">Accueil</a>
-    <a href="galerie.html" onclick="showSection('galerie')">Projets</a>
-    <a href="contact.html" onclick="showSection('contact')">Contact</a>
+  <!-- MENU -->
+  <nav class="navbar">
+    <a href="index.html">Accueil</a>
+    <a href="galerie.html">Projets</a>
+    <a href="contact.html">Contact</a>
   </nav>
 
+  <main class="page">
 
-
-
-<body1>
- <main>
-    <!-- GALERIE -->
-    <section id="galerie" class="active">
+    <!-- BLOC GALERIE -->
+    <section class="card galerie-section">
       <h2>Mes créations</h2>
-      <p>Voici quelques exemples de mes réalisations récentes :</p>
-      <div class="gallery">
-        <a href="projet1.html" class="bouton-image">
-          <img src="https://raw.githubusercontent.com/artisan3dprintdesign/SiteImage/refs/heads/main/symboleS.jpg" alt="PorteClé" class="logo">
-        </a>   
+      <p class="galerie-intro">
+        Voici quelques exemples de mes réalisations récentes :
+      </p>
 
-        <a href="projet2.html" class="bouton-image">
-          <img src="https://raw.githubusercontent.com/artisan3dprintdesign/SiteImage/refs/heads/main/projetplaque.jpg" alt="Création 2">
-        </a> 
-        
-        <a href="projet3.html" class="bouton-image">
-          <img src="https://raw.githubusercontent.com/artisan3dprintdesign/SiteImage/refs/heads/main/photo3.png" alt="Création 3">
-        </a> 
-        
-        <a href="projet4.html" class="bouton-image">
-          <img src="https://raw.githubusercontent.com/artisan3dprintdesign/SiteImage/refs/heads/main/photo4.png" alt="Création 4">
-        </a> 
-      
-    </div>
+      <div class="creations-grid">
+        <a href="projet1.html" class="creation-card">
+          <img
+            src="https://raw.githubusercontent.com/artisan3dprintdesign/SiteImage/refs/heads/main/symboleS.jpg"
+            alt="Porte-clés Suzuki 3D">
+        </a>
+
+        <a href="projet2.html" class="creation-card">
+          <img
+            src="https://raw.githubusercontent.com/artisan3dprintdesign/SiteImage/refs/heads/main/projetplaque.jpg"
+            alt="Plaque moto personnalisée">
+        </a>
+
+        <a href="projet3.html" class="creation-card">
+          <img
+            src="https://raw.githubusercontent.com/artisan3dprintdesign/SiteImage/refs/heads/main/photo3.png"
+            alt="Création 3D n°3">
+        </a>
+
+        <a href="projet4.html" class="creation-card">
+          <img
+            src="https://raw.githubusercontent.com/artisan3dprintdesign/SiteImage/refs/heads/main/photo4.png"
+            alt="Création 3D n°4">
+        </a>
+      </div>
     </section>
- </main>
-</body1>
 
+  </main>
 
-
-
-
-
-
-
-  <footer>
+  <!-- FOOTER -->
+  <footer class="site-footer">
     © 2025 Artisan3DPrint Design — Tous droits réservés
   </footer>
 
-  <script>
-    // Script pour afficher les sections selon l’onglet cliqué
-    function showSection(id) {
-      document.querySelectorAll("section").forEach(s => s.classList.remove("active"));
-      document.getElementById(id).classList.add("active");
-    }
-  </script>
 </body>
 </html>

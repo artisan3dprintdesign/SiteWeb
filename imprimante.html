@@ -2,87 +2,106 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Titouan Franchet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/artisan3dprintdesign/SiteImage/refs/heads/main/logo.png">
-    <link rel="stylesheet" href="stylee.css">
-    <title>Artisan3DPrint Design - Mon imprimante 3D</title>
+  <meta charset="UTF-8">
+  <meta name="author" content="Titouan Franchet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png"
+        href="https://raw.githubusercontent.com/artisan3dprintdesign/SiteImage/refs/heads/main/logo.png">
+  <!-- CSS spécifique à cette page -->
+  <link rel="stylesheet" href="imprimante.css">
+  <title>Artisan3DPrint Design - Mon imprimante 3D</title>
 </head>
 
 <body>
-  <header>
+
+  <!-- HEADER -->
+  <header class="site-header">
     <h1>Artisan3DPrint Design</h1>
-    <p>Bienvenue sur la présentation de mon imprimante 🌟</p>
+    <p>Présentation de mon imprimante 3D 🌟</p>
   </header>
 
-  <nav>
-    <a href="index.html" onclick="showSection('accueil')">Accueil</a>
-    <a href="galerie.html" onclick="showSection('galerie')">Projets</a>
-    <a href="contact.html" onclick="showSection('contact')">Contact</a>
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <a href="index.html">Accueil</a>
+    <a href="galerie.html">Projets</a>
+    <a href="contact.html">Contact</a>
   </nav>
 
-  <main>
-  <section class="page-imprimante active">
-    <h2>Mon imprimante 3D</h2>
+  <main class="page">
 
-    <div class="imprimante-wrapper">
+    <!-- SECTION IMPRIMANTE -->
+    <section class="card imprimante-section">
+      <h2>Mon imprimante 3D</h2>
 
-      <!-- COLONNE GAUCHE : PHOTO + VIDÉO -->
-      <div class="imprimante-media">
+      <div class="imprimante-wrapper">
 
-        <!-- Carte photo -->
-        <figure class="imprimante-card imprimante-card-photo">
-          <img src="https://raw.githubusercontent.com/artisan3dprintdesign/SiteImage/refs/heads/main/imprimante.png"
-               alt="Imprimante 3D Creality Ender 3 S1 Pro"
-               class="imprimante-photo">
-          <figcaption>Imprimante 3D Creality Ender 3 S1 Pro</figcaption>
-        </figure>
+        <!-- COLONNE GAUCHE : PHOTO + VIDÉO -->
+        <div class="imprimante-media">
 
-        <!-- Carte vidéo -->
-        <div class="imprimante-card imprimante-video-card">
-          <h3>Impression en action</h3>
-          <div style="position:relative; width:100%; height:0px; padding-bottom:178.218%"><iframe allow="fullscreen;autoplay" allowfullscreen height="100%" src="https://streamable.com/e/nayh8u?autoplay=1&muted=1" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe></div>
+          <!-- Carte photo -->
+          <figure class="imprimante-card">
+            <img
+              src="https://raw.githubusercontent.com/artisan3dprintdesign/SiteImage/refs/heads/main/imprimante.png"
+              alt="Imprimante 3D Creality Ender 3 S1 Pro"
+              class="imprimante-photo">
+            <figcaption>Imprimante 3D Creality Ender 3 S1 Pro</figcaption>
+          </figure>
+
+          <!-- Carte vidéo (Streamable comme dans ton ancien HTML) -->
+          <div class="imprimante-card">
+    <h3>Impression en action</h3>
+
+    <div class="video-container">
+        <iframe
+            src="https://streamable.com/e/nayh8u?autoplay=1&muted=1"
+            allow="fullscreen;autoplay"
+            allowfullscreen
+            frameborder="0">
+        </iframe>
+    </div>
+</div>
+
+
+
         </div>
+
+        <!-- COLONNE DROITE : DESCRIPTION STRUCTURÉE -->
+        <article class="imprimante-card imprimante-description">
+          <h3>Caractéristiques techniques</h3>
+          <ul>
+            <li>Modèle : <strong>Creality Ender 3 S1 Pro</strong></li>
+            <li>Volume d’impression : <strong>220 × 220 × 270 mm</strong> max</li>
+            <li>Architecture : <strong>3 axes</strong>
+              (plateau sur l’axe Y, buse en mouvement sur les axes X et Z)</li>
+            <li>Température maximale de la buse : <strong>300&nbsp;°C</strong></li>
+            <li>Température maximale du plateau : <strong>110&nbsp;°C</strong></li>
+            <li>Filament utilisé : <strong>PLA 100&nbsp;%</strong></li>
+            <li>Réglages typiques PLA : <strong>220&nbsp;°C</strong> pour la buse,
+                <strong>60&nbsp;°C</strong> pour le plateau</li>
+          </ul>
+
+          <h3>Utilisation et entretien</h3>
+          <p>
+            Cette imprimante 3D me permet de réaliser des projets précis et modernes
+            tout en restant fiable au quotidien.
+          </p>
+          <p>
+            Je réalise régulièrement la <strong>calibration du plateau</strong> ainsi que
+            le <strong>nettoyage de la buse</strong> afin de garantir une excellente
+            qualité d’impression et éviter les bouchages.
+          </p>
+        </article>
 
       </div>
 
-      <!-- COLONNE DROITE : DESCRIPTION STRUCTURÉE -->
-      <article class="imprimante-card imprimante-description">
-        <h3>Caractéristiques techniques</h3>
-        <ul>
-          <li>Modèle : <strong>Creality Ender 3 S1 Pro</strong></li>
-          <li>Volume d’impression : <strong>220 × 220 × 270 mm</strong> max</li>
-          <li>Architecture : <strong>3 axes</strong>
-            (plateau sur l’axe Y, buse en mouvement sur les axes X et Z)</li>
-          <li>Température maximale de la buse : <strong>300&nbsp;°C</strong></li>
-          <li>Température maximale du plateau : <strong>110&nbsp;°C</strong></li>
-          <li>Filament utilisé : <strong>PLA 100&nbsp;%</strong></li>
-          <li>Réglages typiques PLA : <strong>220&nbsp;°C</strong> pour la buse,
-              <strong>60&nbsp;°C</strong> pour le plateau</li>
-        </ul>
+    </section>
 
-        <h3>Utilisation et entretien</h3>
-        <p>
-          Cette imprimante 3D me permet de réaliser des projets précis et modernes
-          tout en restant fiable au quotidien.
-        </p>
-        <p>
-          Je réalise régulièrement la <strong>calibration du plateau</strong> ainsi que
-          le <strong>nettoyage de la buse</strong> afin de garantir une excellente
-          qualité d’impression et éviter les bouchages.
-        </p>
-      </article>
+  </main>
 
-    </div>
-  </section>
-</main>
-
-
-  <footer>
+  <!-- FOOTER -->
+  <footer class="site-footer">
     © 2025 Artisan3DPrint Design — Tous droits réservés
   </footer>
 
 </body>
 </html>
-
