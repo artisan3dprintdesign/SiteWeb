@@ -126,6 +126,11 @@ section.active {
 /* =========================================
    5. GALERIE D’IMAGES / CARTES
    ========================================= */
+.gmail-logo {
+    width: 25px;
+    height: 25px;
+    transition: transform 0.2s ease;
+}
 
 .gallery {
   display: flex;
@@ -512,3 +517,4 @@ footer {
     justify-content: center;
   }
 }
+
